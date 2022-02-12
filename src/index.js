@@ -1,1 +1,0 @@
-alert("index.js is here!!!");
