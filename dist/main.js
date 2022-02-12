@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/about.js":
+/*!**********************!*\
+  !*** ./src/about.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ aboutComponent)\n/* harmony export */ });\nfunction aboutComponent() {\n  const heading = document.createElement(\"h1\");\n  heading.textContent = \"About\";\n\n  const image = document.createElement(\"img\");\n  image.src = \"https://source.unsplash.com/N_Y88TWmGwA/600x400\";\n  image.alt = \"Restaurant Image\";\n\n  const paragraph = document.createElement(\"p\");\n  paragraph.textContent = `Vivamus elementum libero eu dui accumsan, sed dapibus lorem venenatis.\n  Nunc sagittis sem quis facilisis semper. Integer turpis nunc,\n  sollicitudin sit amet enim eget, viverra tempus neque. Nullam sed mattis\n  turpis, eget blandit diam. Nulla blandit aliquet erat, in suscipit lorem\n  tincidunt at. Nunc ac posuere ligula, in vulputate tellus. Etiam quis\n  rutrum tellus.`;\n\n  const elements = [heading, image, paragraph]\n\n  return elements;\n\n}\n\n\n//# sourceURL=webpack://odin-restaurant/./src/about.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
@@ -26,7 +36,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n\n\nconst myModule = function(doc) {\n  doc.querySelector(\"#content\").append(...(0,_home_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n}(document);\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu.js */ \"./src/menu.js\");\n/* harmony import */ var _about_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./about.js */ \"./src/about.js\");\n\n\n\n\nconst myModule = (function (doc) {\n  const content = doc.querySelector(\"#content\");\n\n  const clearContent = () => {\n    content.textContent = \"\";\n  };\n\n  const addButons = () => {\n    const homeButton = doc.createElement(\"button\");\n    homeButton.textContent = \"Home\";\n    homeButton.addEventListener(\"click\", () => {\n      clearContent();\n      addButons();\n      content.append(...(0,_home_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n    });\n    const menuButton = doc.createElement(\"button\");\n    menuButton.textContent = \"Menu\";\n    menuButton.addEventListener(\"click\", () => {\n      clearContent();\n      addButons();\n      content.append(...(0,_menu_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\n    });\n    const aboutButton = doc.createElement(\"button\");\n    aboutButton.textContent = \"About\";\n    aboutButton.addEventListener(\"click\", () => {\n      clearContent();\n      addButons();\n      content.append(...(0,_about_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])());\n    });\n\n    content.append(homeButton, menuButton, aboutButton);\n  };\n\n  addButons();\n  content.append(...(0,_home_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n})(document);\n\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ menuComponent)\n/* harmony export */ });\nfunction menuComponent() {\n  const heading = document.createElement(\"h1\");\n  heading.textContent = \"Menu\";\n\n  const image = document.createElement(\"img\");\n  image.src = \"https://source.unsplash.com/N_Y88TWmGwA/600x400\";\n  image.alt = \"Restaurant Image\";\n\n  const paragraph = document.createElement(\"p\");\n  paragraph.textContent = `Vivamus elementum libero eu dui accumsan, sed dapibus lorem venenatis.\n  Nunc sagittis sem quis facilisis semper. Integer turpis nunc,\n  sollicitudin sit amet enim eget, viverra tempus neque. Nullam sed mattis\n  turpis, eget blandit diam. Nulla blandit aliquet erat, in suscipit lorem\n  tincidunt at. Nunc ac posuere ligula, in vulputate tellus. Etiam quis\n  rutrum tellus.`;\n\n  const elements = [heading, image, paragraph]\n\n  return elements;\n\n}\n\n\n//# sourceURL=webpack://odin-restaurant/./src/menu.js?");
 
 /***/ })
 
