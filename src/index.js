@@ -6,7 +6,7 @@ const myModule = (function (doc) {
   const content = doc.querySelector("#content");
 
   const clearContent = () => {
-    content.textContent = "";
+    content.querySelectorAll(".container").forEach(e => e.remove());
   };
 
   const addButons = () => {
@@ -14,21 +14,18 @@ const myModule = (function (doc) {
     homeButton.textContent = "Home";
     homeButton.addEventListener("click", () => {
       clearContent();
-      addButons();
       content.appendChild(homeComponent());
     });
     const menuButton = doc.createElement("button");
     menuButton.textContent = "Menu";
     menuButton.addEventListener("click", () => {
       clearContent();
-      addButons();
       content.appendChild(menuComponent());
     });
     const aboutButton = doc.createElement("button");
     aboutButton.textContent = "About";
     aboutButton.addEventListener("click", () => {
       clearContent();
-      addButons();
       content.appendChild(aboutComponent());
     });
 
