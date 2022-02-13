@@ -1,6 +1,7 @@
 import homeComponent from "./home.js";
 import menuComponent from "./menu.js";
 import aboutComponent from "./about.js";
+import "./style.css";
 
 const myModule = (function (doc) {
   const content = doc.querySelector("#content");

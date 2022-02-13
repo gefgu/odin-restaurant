@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+
+#content {
+  padding: 32px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 32px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.buttons button {
+  border: none;
+  padding: 8px;
+  font-size: 1.1rem;
+}
