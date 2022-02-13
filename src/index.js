@@ -15,26 +15,26 @@ const myModule = (function (doc) {
     homeButton.addEventListener("click", () => {
       clearContent();
       addButons();
-      content.append(...homeComponent());
+      content.appendChild(homeComponent());
     });
     const menuButton = doc.createElement("button");
     menuButton.textContent = "Menu";
     menuButton.addEventListener("click", () => {
       clearContent();
       addButons();
-      content.append(...menuComponent());
+      content.appendChild(menuComponent());
     });
     const aboutButton = doc.createElement("button");
     aboutButton.textContent = "About";
     aboutButton.addEventListener("click", () => {
       clearContent();
       addButons();
-      content.append(...aboutComponent());
+      content.appendChild(aboutComponent());
     });
 
     content.append(homeButton, menuButton, aboutButton);
   };
 
   addButons();
-  content.append(...homeComponent());
+  content.appendChild(homeComponent());
 })(document);

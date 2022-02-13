@@ -14,8 +14,10 @@ export default function aboutComponent() {
   tincidunt at. Nunc ac posuere ligula, in vulputate tellus. Etiam quis
   rutrum tellus.`;
 
-  const elements = [heading, image, paragraph]
+  const container = document.createElement("div");
+  container.classList.add("container");
+  container.append(heading, image, paragraph);
 
-  return elements;
+  return container;
 
 }
