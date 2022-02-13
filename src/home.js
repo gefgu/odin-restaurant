@@ -1,9 +1,11 @@
+import Restaurant from "./restaurant.jpg";
+
 export default function homeComponent() {
   const heading = document.createElement("h1");
   heading.textContent = "Awesome Restaurant!";
 
-  const image = document.createElement("img");
-  image.src = "https://source.unsplash.com/N_Y88TWmGwA/600x400";
+  const image = new Image(600, 400);
+  image.src = Restaurant;
   image.alt = "Restaurant Image";
 
   const paragraph = document.createElement("p");
