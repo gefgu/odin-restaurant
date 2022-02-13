@@ -29,7 +29,11 @@ const myModule = (function (doc) {
       content.appendChild(aboutComponent());
     });
 
-    content.append(homeButton, menuButton, aboutButton);
+    const buttons = doc.createElement("div");
+    buttons.classList.add("buttons");
+    buttons.append(homeButton, menuButton, aboutButton);
+
+    content.appendChild(buttons);
   };
 
   addButons();
